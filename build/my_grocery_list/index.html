@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery List - Atila Romero</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #0984e3;
+            --background-color: #f5f6fa;
+            --text-color: #2d3436;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .content {
+            margin-top: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Grocery List</h1>
+            <p>A simple and efficient way to manage your grocery shopping</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <h2>About the App</h2>
+            <p>My Grocery List is a user-friendly application that helps you manage your grocery shopping efficiently. Keep track of your shopping items locally on your device with plans for future cloud sync capabilities.</p>
+            
+            <h2>Features</h2>
+            <ul>
+                <li>Create and manage multiple shopping lists</li>
+                <li>Local storage for privacy</li>
+                <li>Simple and intuitive interface</li>
+                <li>Works offline</li>
+            </ul>
+
+            <div class="links">
+                <a href="../index.html">← Back to Home</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

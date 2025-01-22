@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atila Romero</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #0984e3;
+            --background-color: #f5f6fa;
+            --text-color: #2d3436;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #636e72;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Atila Romero</h1>
+            <p class="subtitle">Welcome to my personal website</p>
+            <div class="social-links">
+                <a href="https://github.com/atilaromero" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/atilaromero" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>Hello! I'm Atila Romero. This is my personal website where I share my projects, thoughts, and experiences.</p>
+            </div>
+            <div class="card">
+                <h2>Apps</h2>
+                <p>Check out my applications:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem;">
+                        <a href="my_grocery_list/index.html" style="color: var(--secondary-color); text-decoration: none; display: block; padding: 1rem; border: 2px solid var(--secondary-color); border-radius: 5px; transition: all 0.3s ease;">
+                            <strong>My Grocery List</strong><br>
+                            A simple and efficient way to manage your grocery shopping
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Projects</h2>
+                <p>Check out my latest projects and contributions on my GitHub profile. I'm passionate about creating useful and innovative solutions.</p>
+            </div>
+            <div class="card">
+                <h2>Blog</h2>
+                <p>Coming soon! I'll be sharing my insights, tutorials, and experiences in technology and software development.</p>
+            </div>
+        </div>
+    </main>
+    <footer style="text-align: center; padding: 2rem 0; margin-top: 2rem;">
+        <div class="container">
+            <a href="privacy-policy.html" style="color: var(--secondary-color); text-decoration: none;">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
