@@ -100,6 +100,16 @@
             color: white;
         }
 
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            display: block;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
@@ -118,6 +128,7 @@
 <body>
     <header>
         <div class="container">
+            <img src="profile.png" alt="Atila Romero" class="profile-image">
             <h1>Atila Romero</h1>
             <p class="subtitle">Senior FullStack Engineer | DevOps Specialist</p>
             <div class="social-links">
