@@ -4,101 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading List - Atila Romero</title>
-    <style>
-        :root {
-            --primary-color: #2d3436;
-            --secondary-color: #0984e3;
-            --background-color: #f5f6fa;
-            --text-color: #2d3436;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-
-        .book-list {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .book-category {
-            margin-top: 2rem;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-            color: var(--primary-color);
-        }
-
-        .book-category:first-child {
-            margin-top: 0;
-        }
-
-        .book-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .book-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .book-title {
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .book-title:hover {
-            text-decoration: underline;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 2rem;
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="css/books.css">
 </head>
 <body>
     <header>
@@ -109,12 +15,22 @@
         <div class="book-list">
             <h2 class="book-category">Agile, Lean & DevOps</h2>
             <div class="book-item">
-                <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="book-title">Accelerate</a>
-                <p>By Nicole Forsgren PhD, Jez Humble, and Gene Kim - Building and scaling high-performing technology organizations.</p>
+                <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339">
+                    <img src="https://images-na.ssl-images-amazon.com/images/P/1942788339.01.MZZZZZZZ.jpg" alt="Accelerate book cover">
+                </a>
+                <div class="book-details">
+                    <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339" class="book-title">Accelerate</a>
+                    <p>By Nicole Forsgren PhD, Jez Humble, and Gene Kim - Building and scaling high-performing technology organizations.</p>
+                </div>
             </div>
             <div class="book-item">
-                <a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290" class="book-title">The Phoenix Project</a>
-                <p>By Gene Kim, Kevin Behr, and George Spafford - A novel about IT, DevOps, and helping your business win.</p>
+                <a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290">
+                    <img src="https://images-na.ssl-images-amazon.com/images/P/1942788290.01.MZZZZZZZ.jpg" alt="The Phoenix Project book cover">
+                </a>
+                <div class="book-details">
+                    <a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290" class="book-title">The Phoenix Project</a>
+                    <p>By Gene Kim, Kevin Behr, and George Spafford - A novel about IT, DevOps, and helping your business win.</p>
+                </div>
             </div>
             <div class="book-item">
                 <a href="https://www.amazon.com/Unicorn-Project-Developers-Disruption-Thriving/dp/1942788762" class="book-title">The Unicorn Project</a>
